@@ -1,0 +1,71 @@
+# ---------------------------------------------------------------
+# Task Management System - files that must NOT go to GitHub
+# Applies to frontend/, admin/ and backend/
+# ---------------------------------------------------------------
+
+# Dependencies (re-created with `npm install`)
+node_modules/
+
+# Environment files - contain DB password, JWT secret, admin password
+.env
+.env.*
+!.env.example
+
+# Build output (re-created with `npm run build`)
+dist/
+dist-ssr/
+build/
+out/
+
+# Caches
+.cache/
+.vite/
+.eslintcache
+.parcel-cache/
+*.tsbuildinfo
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Database dumps / local databases
+# NOTE: do NOT add *.sql here - Prisma migrations in
+# backend/prisma/migrations/**/migration.sql must be committed.
+*.dump
+*.backup
+*.bak
+*.sql.gz
+*.db
+*.sqlite
+*.sqlite3
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / local tool settings
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.claude/
